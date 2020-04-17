@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #0d0535;
+            color: white;
+            padding: 15px;
+        }
+    </style>        
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="~/">
+                    <img src="https://ue.ucdavis.edu/sites/g/files/dgvnsk4711/files/UE%20Logo-01_1.png" height="50">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="~/"><h4>College Management System</h4></a></li>
+                    <li><a href="~/">Exit</></a></li>
+                    <li>@Html.ActionLink("Create new student", "Create", "College")</li>
+                    
+                </ul>
+                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="~/"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <div class="row">
+
+              @RenderBody()
+
+        </div>
+    </div>
+
+
+    <footer class="container-fluid text-center">
+            <div class="row hide_desktop space80"></div>
+            <div class="row  space80"></div>
+            <div class="row  space80">
+            </div>
+            <div class="banner_image">
+
+                <!-- BANNER -->
+                <section class="banner black_bg no_padding_bottom">
+                    <div class="container">
+
+                        <!-- ROW -->
+                        <div class="row first last">
+
+                            <div class="span12 cols centered text_center first last">
+
+                                <h1 class="threeem">Contact</h1>
+
+                            </div>
+
+                        </div>
+                        <!--// ROW -->
+
+                    </div>
+                </section>
+                <!--// BANNER -->
+
+            </div>
+            <div class="row  space80">
+            </div>
+            <div class="row  ">
+                <div class="row  ">
+                    <div class="full">
+                        <div class="col-md-12">
+                            <div class="container">
+                                <div class="col-md-6">
+
+
+                                    <div class="tweet">
+
+                                        <div class="white">Our office is located at 1556 Warden Street</div>
+                                        <div class="white">WDCC Centre Building 45</div>
+                                        <div class="white">M5I 3F6 Toronto - Ontario - Canada</div>
+
+                                        <i class="fa fa-twitter">
+                                            <img src="http://www.wdcc.com.co/index/images/earth.png" alt="Address" class="transparent">
+                                        </i>
+                                    </div>
+                                    <br>
+                                    <div class="tweet">
+
+                                        <div class="white">Monday to Friday from 9am to 5pm</div>
+                                        <div class="white">Saturdays from 8:30am to 1pm</div>
+
+                                        <i class="fa fa-twitter">
+                                            <img src="http://www.wdcc.com.co/index/images/time.png" alt="Address" class="transparent">
+                                        </i>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-md-6">
+
+
+
+
+                                    <div class="tweet">
+
+                                        <div class="white">416-258-9647</div>
+                                        <div class="white">416-325-7416</div>
+
+                                        <i class="fa fa-twitter">
+                                            <img src="http://www.campings.net/images/ico-telefono.png" alt="http://www.campings.net/images/ico-telefono.png" class="transparent">
+                                        </i>
+                                    </div>
+
+                                    <div class="tweet">
+
+                                        <div class="black_bg" style="margin-top: 3px; padding-top: 9px;">
+                                            <a href="mailto:contact@wdcc.com">mailto:contact@wdcc.com</a>
+                                        </div>
+
+
+                                        <i class="fa fa-twitter">
+                                            <img width="50" height="50" src="http://camda.com.mx/wp-content/uploads/2014/06/correo-camda-3.png" style="-webkit-user-select: none; cursor: zoom-in;">
+                                        </i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row space10"></div>
+                            <div class="row">
+                            </div>
+
+                            <div class=" space80"></div>
+                        </div>
+                    </div>
+                    <div class=" hide_mobile space80"></div>
+                    <div class="hide_mobile space80"></div>
+                </div>
+            </div>
+
+    </footer>
+
+
+
+</body>
+</html>
